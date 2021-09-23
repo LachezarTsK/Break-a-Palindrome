@@ -8,7 +8,7 @@ var breakPalindrome = function (palindrome) {
         return "";
     }
 
-    let halfLength = Math.floor(palindrome.length);
+    let halfLength = Math.floor(palindrome.length / 2);
     for (let i = 0; i < halfLength; i++) {
         if (palindrome.charAt(i) !== 'a') {
             return palindrome.substr(0, i) + 'a' + palindrome.substr(i + 1);
